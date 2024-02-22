@@ -247,7 +247,8 @@ class TestHostcfgdDaemon(TestCase):
         MockConfigDb.set_config_db(HOSTCFG_DAEMON_CFG_DB)
         MockConfigDb.event_queue = [
             (swsscommon.CFG_MGMT_INTERFACE_TABLE_NAME, 'eth0|1.2.3.4/24'),
-            (swsscommon.CFG_MGMT_VRF_CONFIG_TABLE_NAME, 'vrf_global')
+            (swsscommon.CFG_MGMT_VRF_CONFIG_TABLE_NAME, 'vrf_global'),
+            (swsscommon.CFG_MGMT_PORT_TABLE_NAME, 'eth0')
         ]
         daemon = hostcfgd.HostConfigDaemon()
         daemon.register_callbacks()

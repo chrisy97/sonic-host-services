@@ -85,6 +85,13 @@ HOSTCFG_DAEMON_CFG_DB = {
             'mgmtVrfEnabled': 'true'
         }
     },
+    "MGMT_PORT": {
+        "eth0": {
+            'autoneg': 'on',
+            'duplex': 'full',
+            'speed': '1000'
+        }
+    },
     "DNS_NAMESERVER": {
         "1.1.1.1": {}
     },
